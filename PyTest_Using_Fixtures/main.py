@@ -13,3 +13,8 @@ while True:
     favorite_players.store(favorite_player)
 
 
+# Displaying the list of favorite players
+print("Favorite players are : ")
+players = favorite_players.get_list()
+for player in players:
+    print(f"- {player}")
